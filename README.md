@@ -39,6 +39,42 @@ export default defineConfig({
 
 - add your style (see ./src/scss/bootstrap.scss)
 
+```scss
+/* src/scss/bootstrap.scss */
+/* ... */
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+// @import "~bootstrap/scss/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$success: #7952b3;
+
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+//@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+
+
+/* ... */
+```
+
 - ...and import your style to main.js
 
 ```js
