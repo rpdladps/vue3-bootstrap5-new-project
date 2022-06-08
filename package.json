@@ -23,6 +23,8 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.0",
+    "cssnano": "^5.1.11",
+    "cssnano-preset-advanced": "^5.3.7",
     "cypress": "^10.0.2",
     "eslint": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
