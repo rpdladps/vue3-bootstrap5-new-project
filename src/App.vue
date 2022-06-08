@@ -19,6 +19,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/playground">Playground</RouterLink>
       </nav>
     </div>
   </header>
@@ -26,7 +27,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
   <RouterView />
 </template>
 
-<style>
+<style >
 @import "@/assets/base.css";
 
 #app {
@@ -68,7 +69,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: gray;
 }
 
 nav a.router-link-exact-active:hover {
